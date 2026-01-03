@@ -2,32 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>decor your home with us</title>
+  <title>My Photo Website</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Stylish Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'playfair dispaly', sans-serif;
-      background: #f2f2f2;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
       text-align: center;
     }
 
     h1 {
-      margin: 30px 0 10px;
-      font-weight: 700;
+      margin-top: 30px;
+      font-size: 36px;
       letter-spacing: 2px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 28px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
     }
 
     /* MAIN PHOTO */
     .main-photo {
       width: 80%;
       max-width: 800px;
-      margin: 20px auto;
-      border: 6px solid #d4af37;   /* 👈 CHANGE BORDER COLOR HERE */
-      border-radius: 15px;
+      margin: 30px auto 10px;
+      border: 6px solid #000; /* CHANGE BORDER COLOR */
+      border-radius: 16px;
       overflow: hidden;
     }
 
@@ -36,36 +50,48 @@
       display: block;
     }
 
-    /* COLLAGE GRID */
+    .caption {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* COLLAGE */
     .collage {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      gap: 20px;
       width: 80%;
       max-width: 900px;
-      margin: 40px auto;
+      margin: 30px auto;
     }
 
-    .collage img {
+    .item {
+      background: #fff;
+      padding: 10px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .item img {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
-      border-radius: 12px;
-      border: 4px solid #444;  /* 👈 COLLAGE BORDER */
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      border: 4px solid #444;
     }
 
-    .collage img:hover {
-      transform: scale(1.05);
+    .item p {
+      font-size: 14px;
+      margin-top: 8px;
     }
 
     footer {
-      margin: 40px 0;
+      margin: 50px 0 20px;
       font-size: 14px;
       color: #777;
     }
 
-    /* MOBILE FRIENDLY */
     @media (max-width: 768px) {
       .collage {
         grid-template-columns: repeat(2, 1fr);
@@ -75,29 +101,66 @@
 </head>
 <body>
 
+  <!-- TITLE -->
   <h1>MY PHOTO GALLERY</h1>
-  <p>A simple & stylish layout</p>
+  <p>
+    Welcome to my personal photo website.  
+    This space shows my favorite moments, memories, and creative captures.
+  </p>
 
   <!-- MAIN IMAGE -->
   <div class="main-photo">
     <img src="main.jpg" alt="Main Photo">
   </div>
+  <div class="caption">
+    This is my main featured photo — a highlight of my collection.
+  </div>
+
+  <!-- SECTION TITLE -->
+  <h2>My Photo Collection</h2>
+  <p>
+    Below is a small collage of photos.  
+    Each image represents a special moment or creative idea.
+  </p>
 
   <!-- COLLAGE -->
   <div class="collage">
-    <img src="photo1.jpg">
-    <img src="photo2.jpg">
-    <img src="photo3.jpg">
-    <img src="photo4.jpg">
-    <img src="photo5.jpg">
-    <img src="photo6.jpg">
+
+    <div class="item">
+      <img src="photo1.jpg">
+      <p>Photo caption one</p>
+    </div>
+
+    <div class="item">
+      <img src="photo2.jpg">
+      <p>Photo caption two</p>
+    </div>
+
+    <div class="item">
+      <img src="photo3.jpg">
+      <p>Photo caption three</p>
+    </div>
+
+    <div class="item">
+      <img src="photo4.jpg">
+      <p>Photo caption four</p>
+    </div>
+
+    <div class="item">
+      <img src="photo5.jpg">
+      <p>Photo caption five</p>
+    </div>
+
+    <div class="item">
+      <img src="photo6.jpg">
+      <p>Photo caption six</p>
+    </div>
+
   </div>
 
   <footer>
-    © 2025 My Website
+    © 2025 | My Personal Website
   </footer>
 
 </body>
 </html>
-
-
